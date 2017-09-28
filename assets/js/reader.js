@@ -15,6 +15,10 @@
   reader.readAsDataURL(node.files[0]);
 }
 
+$("#gobutton").onclick(function() {
+  $(location).attr('href','#userInput');
+});
+
 function showQRIntro() {
   return confirm("Use your camera to take a picture of a QR code.");
 }
