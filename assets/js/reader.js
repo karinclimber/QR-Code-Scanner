@@ -15,7 +15,7 @@
   reader.readAsDataURL(node.files[0]);
 }
 
-$("#gobutton").onclick(function() {
+$("#gobutton").click(function() {
   $(location).attr('href','#userInput');
 });
 
