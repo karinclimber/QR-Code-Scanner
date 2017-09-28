@@ -1,3 +1,6 @@
+$("#gobutton").click(function() {
+  $(location).attr('href','#userInput');
+});
 
  function openQRCamera(node) {
   var reader = new FileReader();
@@ -14,10 +17,6 @@
   };
   reader.readAsDataURL(node.files[0]);
 }
-
-$("#gobutton").click(function() {
-  $(location).attr('href','#userInput');
-});
 
 function showQRIntro() {
   return confirm("Use your camera to take a picture of a QR code.");
