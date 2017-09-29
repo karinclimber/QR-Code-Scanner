@@ -1,5 +1,11 @@
 $(document).ready(function() {
-
+  $("#gobutton").click(function() {
+    var userInput = $("#url").val();
+    console.log(userInput);
+   // window.location(userInput)
+    location.href = userInput;
+    //$(location).attr("href", "userInput");
+  });
 
   function showQRIntro() {
     return confirm("Use your camera to take a picture of a QR code.");
@@ -22,12 +28,4 @@ $(document).ready(function() {
     };
     reader.readAsDataURL(node.files[0]);
   }
-
-  $("#gobutton").click(function() {
-    var userInput = $("#url").val();
-    console.log(userInput);
-   // window.location(userInput)
-    location.href = userInput;
-    //$(location).attr("href", "userInput");
-  });
 });
